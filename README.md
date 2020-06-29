@@ -22,3 +22,11 @@ overwrite_output_dir: overwrite if the output dir already exists
 
 code to to fine tune:
 python ./examples/run_language_modeling.py --train_data_file mflannery --output_dir tmp\mflannery --model_type bert --line_by_line --model_name_or_path bert-base-uncased --do_train --per_gpu_train_batch_size=6 --mlm --num_train_epochs=3 --overwrite_output_dir
+
+# TO DO:
+- connect paths between where transformer places fine tuned model and where bert reads it
+- add comments for each bert_babble function explaining input, work, and output
+- add library versions 
+- add links to download data for uncased model
+- add data used in lyric fine tuning, make sure its not copywrited
+- more to dos
