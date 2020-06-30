@@ -24,8 +24,8 @@ code to to fine tune:
 python ./examples/run_language_modeling.py --train_data_file mflannery --output_dir ..\fine_tune_models\model_name --model_type bert --line_by_line --model_name_or_path bert-base-uncased --do_train --per_gpu_train_batch_size=6 --mlm --num_train_epochs=3 --overwrite_output_dir
 
 # TO DO:
-- connect paths between where transformer places fine tuned model and where bert reads it -- current
-- add comments for each bert_babble function explaining input, work, and output
+- connect paths between where transformer places fine tuned model and where bert reads it -- needs to be checked, else done
+- add comments for each bert_babble function explaining input, work, and output -- current
 - add library versions 
 - add links to download data for uncased model
 - add data used in lyric fine tuning, make sure its not copywrited
